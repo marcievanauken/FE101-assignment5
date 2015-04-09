@@ -3,3 +3,22 @@
 .buttonsArgue p {
 	display: none;
 }
+
+
+.dontHover {
+	height:250px;
+	width:300px;
+	background-color: yellow;
+	margin-top:20px;
+	padding-top:50px;
+}
+
+.dontHover p {
+	color:purple;
+	font-weight: bold;
+	text-align: center;
+}
+
+.dontHover p.hover {
+	display:none;
+}
