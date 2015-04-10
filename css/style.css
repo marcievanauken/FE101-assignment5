@@ -22,3 +22,43 @@
 .dontHover p.hover {
 	display:none;
 }
+
+
+#dontHover {
+	height:250px;
+	width:300px;
+	background-color: purple;
+	margin-top:20px;
+	padding-top:50px;
+}
+
+#dontHover p {
+	color:yellow;
+	font-weight: bold;
+	text-align: center;
+}
+
+#dontHover p.hover {
+	display:none;
+}
+
+
+#javadontHover {
+	height:250px;
+	width:300px;
+	background-color: orange;
+	margin-top:20px;
+	padding-top:50px;
+}
+
+.toggle-me {
+	margin-top:50px;
+}
+
+
+.text1 {
+	width:300px;
+}
+
+
+

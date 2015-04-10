@@ -15,6 +15,8 @@ $(document).ready(function(){
 
 
 
+
+
     //function for dontHover div -- it's an angry yellow square
 	 $(".dontHover").mouseover(function(){
         $(".hover").show();
@@ -26,10 +28,26 @@ $(document).ready(function(){
         $(".hover").hide();
     });
 
-	 //trying to do the above with native javascript
-	function onmouseover() {
-		document.getElementById('#noHover').innerHTML = 'Hey, I told you not to hover over me!';
-	}
+
+    //another way of doing above
+     $("#dontHover").mouseover(function(){
+        $('#noHover').html("<strong>Hey, I told you not to hover over me!</strong>");
+    });
+    $("#dontHover").mouseout(function(){
+        $('#noHover').html('Don\'t hover over me!');
+    });
+
+    
+
+
+    //toggling 2 items
+    $('.toggle-me').click(function(){
+     $('.text1').toggle();
+    });
+
+
+
+
 
 
 });
