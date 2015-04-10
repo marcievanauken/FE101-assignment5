@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	console.log('My page loaded!'); //to make sure js file is linked
+    console.log('My page loaded!'); //to make sure js file is linked
 
     //function for buttonsArgue div -- the buttons do not get a long
     $("#buttonOne").click(function(){
@@ -18,12 +18,12 @@ $(document).ready(function(){
 
 
     //function for dontHover div -- it's an angry yellow square
-	 $(".dontHover").mouseover(function(){
+     $(".dontHover").mouseover(function(){
         $(".hover").show();
         $(".noHover").hide();
     });
 
-	 $(".dontHover").mouseout(function(){
+     $(".dontHover").mouseout(function(){
         $(".noHover").show();
         $(".hover").hide();
     });
@@ -48,6 +48,26 @@ $(document).ready(function(){
 
 
 
-
-
 });
+
+    //trying to dosame as toggle-me but in native javascript - not toggling, just hiding
+    // function toggleMe() {
+    //     document.getElementById('text1-java').style.display = 'block';
+    // }
+
+
+   // same as toggle-me but in native javascript 
+   function toggleMe(id) {
+       var hideShow = document.getElementById(id);
+       if (hideShow.style.display == 'block')
+            hideShow.style.display = 'none';
+        else
+            hideShow.style.display = 'block';
+    }
+
+
+
+
+
+
+
